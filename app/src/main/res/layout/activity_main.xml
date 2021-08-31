@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgput"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <TextView
+                android:id="@+id/halo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:paddingTop="80dp"
+                android:textColor="#4748bd"
+                android:text="Halo!"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/halo"
+                android:paddingLeft="30dp"
+                android:textColor="#4748bd"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="185dp"
+                android:layout_height="156dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ui1" />
+
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/ui2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnentrynilai"
+                    android:layout_width="190dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/entrynilai">
+
+                </Button>
+                <Button
+                    android:id="@+id/btnmenu"
+                    android:layout_width="190dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/volume">
+
+                </Button>
+                <Button
+                    android:layout_width="190dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/about">
+
+                </Button>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="353dp"
+            android:background="#4748bd"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="150dp"
+                android:text="Universitas Negeri Surabaya"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#FFF"
+                android:background="@drawable/gedungunesa"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center_horizontal"
+                android:text="Copyright 2021"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="15dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Development Reza Kurnia Setiawan"
+                android:textAlignment="center"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

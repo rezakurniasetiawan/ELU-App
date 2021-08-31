@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context=".Luasbalok">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#4748bd">
+
+
+
+            <TextView
+                android:id="@+id/textone"
+                android:layout_below="@+id/btnback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENGHITUNG"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:paddingLeft="25sp"
+                android:paddingTop="50dp"
+                android:textColor="#FFF">
+            </TextView>
+            <TextView
+                android:layout_below="@+id/textone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LUAS BALOK"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:paddingLeft="25sp"/>
+
+            <ImageView
+                android:layout_width="169dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/people"
+                ></ImageView>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/balokluas"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="Panjang"/>
+
+                <EditText
+                    android:id="@+id/etpanjang"
+                    android:layout_width="match_parent"
+                    android:background="#4748bd"
+                    android:padding="5dp"
+                    android:layout_height="35dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Lebar"/>
+
+                <EditText
+                    android:id="@+id/etlebar"
+                    android:layout_width="match_parent"
+                    android:background="#4748bd"
+                    android:padding="5dp"
+                    android:layout_height="35dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Tinggi"/>
+
+                <EditText
+                    android:id="@+id/ettinggi"
+                    android:layout_width="match_parent"
+                    android:background="#4748bd"
+                    android:padding="5dp"
+                    android:layout_height="35dp"
+                    android:inputType="number"
+                    android:textColor="#FFF"/>
+                <Button
+                    android:id="@+id/btnhitungluas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:text="HITUNG"
+                    android:textColor="#FFF"
+                    android:backgroundTint="#26ad18"
+                    tools:ignore="OnClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:text="Hasil :"/>
+                <TextView
+                    android:id="@+id/texthasil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="50sp"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
